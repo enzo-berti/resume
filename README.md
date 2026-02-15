@@ -6,6 +6,10 @@ Built with React, TypeScript, Tailwind CSS, and Framer Motion.
 
 **[▶ Live Demo](https://clementbouly.github.io/interactive-resume-template/)**
 
+<p align="center">
+  <img src="docs/demo.gif" alt="Interactive Resume Template demo" width="480" />
+</p>
+
 ## Features
 
 - **One config file** — Edit a single TypeScript file with your info
@@ -104,7 +108,7 @@ Agentation is **only active in development** and is automatically stripped from 
 
 ## Contributing
 
-Contributions are welcome! Feel free to open issues or submit PRs.
+Contributions are welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
 ## License
 
