@@ -12,29 +12,29 @@ import type { ResumeConfig } from './types'
 export const resumeConfig: ResumeConfig = {
   // ===== PERSONAL INFO =====
   personal: {
-    name: 'Jane Doe',
+    name: 'Enzo Berti',
     photo: '/images/photo.jpg', // Place your photo in public/images/
     photoBackEmoji: '👩‍💻', // Shown when clicking the photo (3D flip)
     title: {
-      en: 'Fullstack Developer',
-      fr: 'Développeuse Fullstack',
+      en: 'Game Developper',
+      fr: 'Développeur Gameplay',
     },
     subtitle: {
       en: '5 years of experience',
       fr: '5 ans d\'expérience',
     },
-    location: 'Paris, France',
+    location: 'Strasbourg, France',
   },
 
   // ===== SEO (used in <head> meta tags) =====
   seo: {
-    title: 'Jane Doe — Fullstack Developer',
-    description: 'Interactive resume of Jane Doe, Fullstack Developer specializing in React and TypeScript.',
+    title: 'Enzo Berti — Game Developper',
+    description: 'Interactive resume of Enzo Berti, Gameplay Developper specializing in c++, unity and unreal engine.',
   },
 
   // ===== LANGUAGES =====
   languages: {
-    default: 'en',
+    default: 'fr',
     available: ['en', 'fr'],
     labels: {
       en: 'EN',
@@ -44,11 +44,10 @@ export const resumeConfig: ResumeConfig = {
 
   // ===== CONTACT =====
   contact: [
-    { type: 'github', label: 'janedoe', href: 'https://github.com/janedoe' },
-    { type: 'linkedin', label: 'Jane Doe', href: 'https://linkedin.com/in/janedoe' },
-    { type: 'email', label: 'jane@example.com' },
-    { type: 'phone', label: '+33 6 12 34 56 78' },
-    { type: 'location', label: 'Paris, France' },
+    { type: 'github', label: 'enzo-berti', href: 'https://github.com/enzo-berti' },
+    { type: 'linkedin', label: 'Enzo Berti', href: 'https://linkedin.com/in/enzo-berti/' },
+    { type: 'email', label: 'enzoberti@protonmail.com' },
+    { type: 'location', label: 'Strasbourg, France' },
   ],
 
   // ===== SKILLS =====
