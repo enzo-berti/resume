@@ -47,7 +47,7 @@ export const resumeConfig: ResumeConfig = {
     { type: 'github', label: '/enzo-berti', href: 'https://github.com/enzo-berti' },
     { type: 'itch', label: 'enzoberti.itch.io', href: 'https://enzoberti.itch.io/' },
     { type: 'linkedin', label: 'in/Enzo-Berti', href: 'https://linkedin.com/in/enzo-berti/' },
-    { type: 'email', label: 'enzoberti@protonmail.com',
+    { type: 'email', label: 'enzoberti@protonmail.com' },
     { type: 'location', label: 'Strasbourg, France' },
   ],
 
