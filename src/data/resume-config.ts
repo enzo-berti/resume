@@ -176,7 +176,7 @@ export const resumeConfig: ResumeConfig = {
         fr: 'tbd',
       },
       techs: ['Unity', 'C#', 'FMOD'],
-      itch: 'https://toraenor.itch.io/netherveil',
+      url: 'https://toraenor.itch.io/netherveil',
       github: 'https://github.com/SmoothBrainStudio/Netherveil',
     },
     {
