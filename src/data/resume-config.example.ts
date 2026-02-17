@@ -14,7 +14,7 @@ export const resumeConfig: ResumeConfig = {
   personal: {
     name: 'Enzo Berti',
     photo: '/images/photo.jpg', // Place your photo in public/images/
-    photoBackEmoji: '👩‍💻', // Shown when clicking the photo (3D flip)
+    photoBackEmoji: '🦆', // Shown when clicking the photo (3D flip)
     title: {
       en: 'Game Developper',
       fr: 'Développeur Gameplay',
@@ -44,9 +44,10 @@ export const resumeConfig: ResumeConfig = {
 
   // ===== CONTACT =====
   contact: [
-    { type: 'github', label: 'enzo-berti', href: 'https://github.com/enzo-berti' },
-    { type: 'linkedin', label: 'Enzo Berti', href: 'https://linkedin.com/in/enzo-berti/' },
-    { type: 'email', label: 'enzoberti@protonmail.com' },
+    { type: 'github', label: '/enzo-berti', href: 'https://github.com/enzo-berti' },
+    { type: 'itch', label: 'enzoberti.itch.io', href: 'https://enzoberti.itch.io/' },
+    { type: 'linkedin', label: 'in/Enzo-Berti', href: 'https://linkedin.com/in/enzo-berti/' },
+    { type: 'email', label: 'enzoberti@protonmail.com',
     { type: 'location', label: 'Strasbourg, France' },
   ],
 
@@ -57,42 +58,36 @@ export const resumeConfig: ResumeConfig = {
       type: 'languages',
       items: [
         { name: { en: 'French', fr: 'Français' }, level: { en: 'Native', fr: 'Natif' } },
-        { name: { en: 'English', fr: 'Anglais' }, level: { en: 'Professional', fr: 'Professionnel' }, details: 'TOEIC 910' },
+        { name: { en: 'English', fr: 'Anglais' }, level: { en: 'Professional', fr: 'Professionnel' }, details: 'Passage du TOEIC en cours' },
       ],
     },
     {
-      title: { en: 'Frontend', fr: 'Frontend' },
+      title: { en: 'Langage', fr: 'Language' },
       type: 'badges',
       items: [
-        { name: 'React' },
-        { name: 'TypeScript' },
-        { name: 'Angular' },
-      ],
-    },
-    {
-      title: { en: 'Backend', fr: 'Backend' },
-      type: 'badges',
-      items: [
-        { name: 'Node.js' },
+        { name: 'C++' },
+        { name: 'C#' },
+        { name: 'C' },
         { name: 'Python' },
       ],
     },
     {
-      title: { en: 'Database', fr: 'Base de données' },
+      title: { en: 'Game Engine', fr: 'Moteur de jeux' },
       type: 'badges',
       items: [
-        { name: 'PostgreSQL' },
-        { name: 'MongoDB' },
+        { name: 'Unity' },
+        { name: 'Godot' },
+        { name: 'Unreal Engine 5' },
       ],
     },
     {
-      title: { en: 'DevOps', fr: 'DevOps' },
+      title: { en: 'Other', fr: 'Autres' },
       type: 'badges',
       items: [
-        { name: 'Docker' },
-        { name: 'Kubernetes' },
+        { name: 'Sqlite' },
+        { name: 'Wpf' },
+        { name: 'Windows Forms' },
         { name: 'AWS' },
-        { name: 'GitHub Actions' },
       ],
     },
     {
@@ -283,10 +278,16 @@ export const resumeConfig: ResumeConfig = {
   // ===== EDUCATION =====
   education: [
     {
-      school: { en: 'University of Paris', fr: 'Université de Paris' },
-      degree: { en: 'Master in Computer Science', fr: 'Master Informatique' },
-      specialty: { en: 'Web & Mobile Development', fr: 'Développement Web & Mobile' },
-      period: '2017 - 2019',
+      school: { en: 'Creajeux', fr: 'Creajeux' },
+      degree: { en: 'Bachelor Software engineer', fr: 'Licence informatique' },
+      specialty: { en: 'tbd', fr: 'tbd' },
+      period: '2022 - 2025',
+    },
+    {
+      school: { en: 'Creajeux', fr: 'Creajeux' },
+      degree: { en: 'Preparatory class', fr: 'Classe préparatoire aux grandes écoles' },
+      specialty: { en: 'Mathematics and Computer Science', fr: 'Mathématiques et informatique' },
+      period: '2021 - 2022',
     },
     {
       school: { en: 'University of Paris', fr: 'Université de Paris' },
@@ -300,8 +301,7 @@ export const resumeConfig: ResumeConfig = {
     {
       title: { en: 'Photography', fr: 'Photographie' },
       details: [
-        { en: 'Street photography', fr: 'Photo de rue' },
-        { en: '5 years', fr: '5 ans' },
+        { en: ' Landscape photography', fr: 'Photographie paysage' },
       ],
     },
     {
@@ -314,9 +314,9 @@ export const resumeConfig: ResumeConfig = {
       title: { en: 'Open Source', fr: 'Open Source' },
     },
     {
-      title: { en: 'Guitar', fr: 'Guitare' },
+      title: { en: 'Video editing', fr: 'Montage vidéo' },
       details: [
-        { en: '3 years', fr: '3 ans' },
+        { en: 'Game trailers, podcast', fr: 'Podcast, trailer de jeux vidéo' },
       ],
     },
   ],
