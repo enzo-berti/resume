@@ -207,7 +207,7 @@ export const resumeConfig: ResumeConfig = {
       period: { en: '01/2025 - 06/2025', fr: '01/2025 - 06/2025' },
       description: {
         en: 'Contributed to the development of an e-commerce platform. Gained experience in fullstack development.',
-        fr: 'Contribution au développement d\'un jeu vidéo. Acquisition d\'expérience en développement d'outils sur windows et Unity.',
+        fr: 'Contribution au développement d\'un jeu vidéo. Acquisition d\'expérience en développement d\'outils sur windows et Unity.',
       },
       techs: ['C#', '.NET', 'WPF', 'Unity'],
       details: {
