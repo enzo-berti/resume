@@ -201,19 +201,19 @@ export const resumeConfig: ResumeConfig = {
     },
     {
       id: 'internship',
-      company: { en: 'StartupXYZ', fr: 'StartupXYZ' },
-      role: { en: 'Fullstack Developer Intern', fr: 'Stagiaire Développeuse Fullstack' },
+      company: { en: 'Paradox Polygon', fr: 'Paradox Polygon' },
+      role: { en: 'Unity Developer Intern', fr: 'Stagiaire Développeur Unity' },
       type: { en: 'Internship', fr: 'Stage' },
-      period: { en: '2018 - 2019', fr: '2018 - 2019' },
+      period: { en: '01/2025 - 06/2025', fr: '01/2025 - 06/2025' },
       description: {
         en: 'Contributed to the development of an e-commerce platform. Gained experience in fullstack development.',
-        fr: 'Contribution au développement d\'une plateforme e-commerce. Acquisition d\'expérience en développement fullstack.',
+        fr: 'Contribution au développement d\'un jeu vidéo. Acquisition d\'expérience en développement d'outils sur windows et Unity.',
       },
-      techs: ['React', 'Node.js', 'MongoDB', 'Machine Learning'],
+      techs: ['C#', '.NET', 'WPF', 'Unity'],
       details: {
         context: {
-          en: 'Early-stage startup (seed round), small team of 5 developers building an e-commerce platform from the ground up. Fast-paced environment with weekly releases.',
-          fr: 'Startup en phase de démarrage (seed round), petite équipe de 5 développeurs construisant une plateforme e-commerce from scratch. Environnement rapide avec des releases hebdomadaires.',
+          en: 'Early-stage startup (seed round), small team of 3 developers building an e-commerce platform from the ground up. Fast-paced environment with weekly releases.',
+          fr: 'Startup en phase de démarrage, petite équipe de 3 développeurs construisant une plateforme e-commerce from scratch. Environnement rapide avec des releases hebdomadaires.',
         },
         tasks: {
           en: [
