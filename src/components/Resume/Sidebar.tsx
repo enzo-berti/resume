@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 import { useTranslation } from '@/lib/i18n'
 import { resumeConfig } from '@/data/resume-config'
 import { assetUrl } from '@/lib/utils'
-import { detectedAssets } from 'virtual:detected-assets'
 import { SidebarSection } from './SidebarSection'
 import { ContactItem } from './ContactItem'
 import { SkillCategory } from './SkillCategory'
@@ -11,7 +10,7 @@ import { TechBadge } from './TechBadge'
 
 const PHOTO_ANIMATION_DURATION = 0.8
 
-function SidebarPhoto({ photo, name, emoji }: { photo?: string; name: string; emoji?: string }) {
+function SidebarPhoto({ photo, name, emoji }: { photo: string; name: string; emoji?: string }) {
   const [isSpinning, setIsSpinning] = useState(false)
   const [hasError, setHasError] = useState(false)
 
@@ -27,7 +26,7 @@ function SidebarPhoto({ photo, name, emoji }: { photo?: string; name: string; em
     }
   }
 
-  if (!photo || hasError) {
+  if (hasError) {
     return (
       <div className="flex justify-center mb-6">
         <div className="w-32 h-32 rounded-full bg-gradient-to-br from-resume-primary to-resume-primary-light flex items-center justify-center border-4 border-resume-bg/30 shadow-lg">
@@ -80,12 +79,14 @@ export function Sidebar() {
 
   return (
     <div className="md:w-[38%] bg-gradient-to-b from-resume-sidebar-from to-resume-sidebar-to p-8">
-      {/* Photo / Profile image — priority: config > auto-detected > emoji fallback */}
-      <SidebarPhoto
-        photo={(personal.photo || detectedAssets.photo) ? assetUrl(personal.photo || detectedAssets.photo!) : undefined}
-        name={personal.name}
-        emoji={personal.photoBackEmoji}
-      />
+      {/* Photo */}
+      {personal.photo && (
+        <SidebarPhoto
+          photo={assetUrl(personal.photo)}
+          name={personal.name}
+          emoji={personal.photoBackEmoji}
+        />
+      )}
 
       {/* Contact */}
       <SidebarSection title={resolve(labels.sections.contact)}>

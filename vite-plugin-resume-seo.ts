@@ -1,7 +1,5 @@
 import type { Plugin } from 'vite'
 import type { ResumeConfig } from './src/data/types'
-import fs from 'fs'
-import path from 'path'
 
 /**
  * Vite plugin that injects SEO data directly into the HTML at build time.
@@ -250,22 +248,13 @@ function buildNoscriptHtml(
     lines.push(`${indent}  </section>`)
   }
 
-  // PDF download link — priority: config > auto-detected
-  const lang = config.languages.default
-  let pdfPath: string | null = null
+  // PDF download link
   if (pdf) {
-    pdfPath = typeof pdf.path === 'string' ? pdf.path : (pdf.path[lang] ?? Object.values(pdf.path)[0] ?? null)
-  } else {
-    // Auto-detect from public/cv/<lang>/
-    const cvLangDir = path.resolve(process.cwd(), 'public', 'cv', lang)
-    if (fs.existsSync(cvLangDir)) {
-      const pdfFile = fs.readdirSync(cvLangDir).find((f) => f.toLowerCase().endsWith('.pdf'))
-      if (pdfFile) pdfPath = `/cv/${lang}/${pdfFile}`
+    const pdfPath = typeof pdf.path === 'string' ? pdf.path : (pdf.path[config.languages.default] ?? Object.values(pdf.path)[0] ?? null)
+    if (pdfPath) {
+      const pdfHref = pdfPath.startsWith('/') ? `${base.replace(/\/$/, '')}${pdfPath}` : pdfPath
+      lines.push(`${indent}  <p style="margin-top: 2rem; text-align: center;"><a href="${escapeHtml(pdfHref)}" style="color: #1e6091; font-weight: 500;">📄 Download PDF</a></p>`)
     }
-  }
-  if (pdfPath) {
-    const pdfHref = pdfPath.startsWith('/') ? `${base.replace(/\/$/, '')}${pdfPath}` : pdfPath
-    lines.push(`${indent}  <p style="margin-top: 2rem; text-align: center;"><a href="${escapeHtml(pdfHref)}" style="color: #1e6091; font-weight: 500;">📄 Download PDF</a></p>`)
   }
 
   lines.push(`${indent}</div>`)

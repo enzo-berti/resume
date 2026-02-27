@@ -1,4 +1,5 @@
 import {
+  ItchIcon,
   CheckIcon,
   EmailIcon,
   ExternalLinkIcon,
@@ -13,6 +14,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useCallback, useState } from 'react'
 
 const ICON_COMPONENTS: Record<ContactType, React.FC<React.SVGProps<SVGSVGElement>>> = {
+  itch: ItchIcon,
   github: GitHubIcon,
   linkedin: LinkedInIcon,
   email: EmailIcon,
@@ -32,7 +34,7 @@ export function ContactItem({ type, label, href }: ContactItemProps) {
   const IconComponent = ICON_COMPONENTS[type]
 
   const isCopyable = type === 'email' || type === 'phone'
-  const isExternal = type === 'github' || type === 'linkedin' || type === 'website'
+  const isExternal = type === 'github' || type === 'linkedin' || type === 'website' || type === 'itch'
   const resolvedHref = isCopyable ? undefined : href
 
   const handleCopy = useCallback(() => {
