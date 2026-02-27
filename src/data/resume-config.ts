@@ -59,6 +59,7 @@ export const resumeConfig: ResumeConfig = {
         { name: 'C++' },
         { name: 'C#' },
         { name: 'C' },
+        { name: 'Lua' },
         { name: 'Python' },
       ],
     },
@@ -72,14 +73,36 @@ export const resumeConfig: ResumeConfig = {
       ],
     },
     {
-      title: { en: 'Other', fr: 'Autres' },
+      title: { en: 'Version Control', fr: 'Contrôle de version' },
       type: 'badges',
       items: [
-        { name: 'SFML' },
+        { name: 'Git' },
+        { name: 'SVN' },
+      ],
+    },
+    {
+      title: { en: 'Tools', fr: 'Outils' },
+      type: 'badges',
+      items: [
         { name: '.NET' },
-        { name: 'SQLite' },
+        { name: 'OpenGL' },
+        { name: 'ImGUI' },
         { name: 'WPF' },
-        { name: 'Windows Forms' },
+        { name: 'FMOD' },
+        { name: 'Wwise' },
+      ],
+    },
+    {
+      title: { en: 'Pro tools', fr: 'Outils professionnels' },
+      type: 'badges',
+      items: [
+        { name: 'Visual Studio' },
+        { name: 'Rider' },
+        { name: 'GitHub' },
+        { name: 'Trello' },
+        { name: 'Figma' },
+        { name: 'Miro' },
+        { name: 'Draw.io' },
       ],
     },
     //{
