@@ -25,6 +25,26 @@ const TECH_REGISTRY = {
   'Alpine.js': { color: '#8BC0D0' },
   'htmx': { color: '#3366CC' },
 
+  // ===== Game Engine =====
+  'Unreal Engine 5': { color: '#110e28' },
+  'Unity': { color: '#505050' },
+  'UI Toolkit': { color: '#db6a00' },
+  'Godot': { color: '#478bbf' },
+  'GameMaker': { color: '#8cc84b' },
+  
+  // ===== IDE =====
+  'Rider': { color: '#d81b60'},
+  'Visual Studio': { color: '#5c2d91' },
+  'Visual Studio Code': { color: '#0081cc' },
+
+  // ===== Game Tools =====
+  'Wwise': { color: '#21429d' },
+  'FMOD': { color: '#292929' },
+
+  // ===== API =====
+  'OpenGL': { color: '#3179c6' },
+  'Vulkan': { color: '#b83029' },
+  
   // ===== Languages =====
   'TypeScript': { color: '#3178C6' },
   'JavaScript': { color: '#F7DF1E' },
@@ -133,6 +153,7 @@ const TECH_REGISTRY = {
   'Framer Motion': { color: '#0055FF' },
 
   // ===== Tools & Others =====
+  'SVN': { color: '#5781c0'},
   'Git': { color: '#F05032' },
   'GitHub': { color: '#181717' },
   'GitLab': { color: '#FC6D26' },
@@ -147,6 +168,9 @@ const TECH_REGISTRY = {
   'Turbopack': { color: '#000000' },
   'Storybook': { color: '#FF4785' },
   'Figma': { color: '#F24E1E' },
+  'Miro': { color: '#f2dd1e'},
+  'Draw.io': { color: '#ec9b3f'},
+  'Trello': { color: '#0079bf' },
   'Stripe': { color: '#635BFF' },
 
   // ===== Testing =====
@@ -157,14 +181,6 @@ const TECH_REGISTRY = {
   'Testing Library': { color: '#E33332' },
   'Mocha': { color: '#8D6748' },
   'Selenium': { color: '#43B02A' },
-
-  // ===== AI & Data =====
-  'TensorFlow': { color: '#FF6F00' },
-  'PyTorch': { color: '#EE4C2C' },
-  'OpenAI': { color: '#412991' },
-  'LangChain': { color: '#1C3C3C' },
-  'Pandas': { color: '#150458' },
-  'NumPy': { color: '#013243' },
 
   // ===== CMS & Others =====
   'WordPress': { color: '#21759B' },
