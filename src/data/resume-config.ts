@@ -26,7 +26,7 @@ export const resumeConfig: ResumeConfig = {
   // ===== LANGUAGES =====
   languages: {
     default: 'fr',
-    available: ['en', 'fr'],
+    available: ['fr'],
     labels: {
       en: 'EN',
       fr: 'FR',
@@ -53,7 +53,7 @@ export const resumeConfig: ResumeConfig = {
       ],
     },
     {
-      title: { en: 'Langage', fr: 'Language' },
+      title: { en: 'Programming Languages', fr: 'Langages Informatiques' },
       type: 'badges',
       items: [
         { name: 'C++' },
@@ -64,7 +64,7 @@ export const resumeConfig: ResumeConfig = {
       ],
     },
     {
-      title: { en: 'Game Engine', fr: 'Moteur de jeux' },
+      title: { en: 'Game Engines', fr: 'Moteurs de jeux' },
       type: 'badges',
       items: [
         { name: 'Unity' },
@@ -99,6 +99,7 @@ export const resumeConfig: ResumeConfig = {
       items: [
         { name: 'Visual Studio' },
         { name: 'Rider' },
+        { name: 'Git' },
         { name: 'GitHub' },
         { name: 'Trello' },
         { name: 'Figma' },
@@ -119,11 +120,11 @@ export const resumeConfig: ResumeConfig = {
   // ===== PROFESSIONAL EXPERIENCES =====
   experiences: [
     {
-      id: 'company-a',
+      id: 'freelance-a',
       company: { en: 'Freelance Developer', fr: 'Projet non annoncé' },
       role: { en: 'Software Developer', fr: 'Lead Développeur Unreal Engine' },
       type: { en: 'Freelance', fr: 'Freelance' },
-      period: { en: '2026 - now', fr: '2026 - now' },
+      period: { en: '2026 - Now', fr: '2026 - Présent' },
       description: {
         en: 'tbd.',
         fr: 'Aide une équipe de 7 personnes étudiantes',
@@ -153,7 +154,7 @@ export const resumeConfig: ResumeConfig = {
       },
     },
     {
-      id: 'company-b',
+      id: 'freelance-school',
       company: { en: 'Freelance Developer', fr: 'Développeur Freelance' },
       role: { en: 'Software Developer', fr: 'Développeur Unity & Unreal' },
       type: { en: 'Freelance', fr: 'Freelance' },
@@ -222,16 +223,16 @@ export const resumeConfig: ResumeConfig = {
   // ===== PROJECTS =====
   projects: [
     {
-      id: 'project-a',
+      id: 'personal-project',
       title: { en: 'ECS Game Engine', fr: 'ECS Game Engine' },
       description: {
         en: 'tbd',
-        fr: 'TatouEngine est un moteur de jeu ECS réalisé sur C++ avec OpenGL, réalisé en 2 semaines. Il est mon projet de soutenance de dernière année. Je m\'intéresse spécialement à l\'ECS et aux structures de données, pour avoir les meilleures performances possibles pour un jeux vidéo.',
+        fr: 'TatouEngine est un moteur de jeu ECS réalisé en 2 semaines sur C++ avec OpenGL. Il est mon projet de soutenance de dernière année. Je m\'intéresse spécialement à l\'ECS et aux structures de données, pour avoir les meilleures performances possibles pour un jeux vidéo.',
       },
       techs: ['C++', 'OpenGL', 'ImGui'],
     },
     {
-      id: 'project-b',
+      id: 'school-project-a',
       title: { en: 'SeedWagon', fr: 'SeedWagon' },
       description: {
         en: 'tbd',
@@ -242,7 +243,7 @@ export const resumeConfig: ResumeConfig = {
       github: 'https://github.com/SmoothBrainStudio/SeedWagon',
     },
     {
-      id: 'project-c',
+      id: 'school-project-b',
       title: { en: 'Netherveil', fr: 'Netherveil' },
       description: {
         en: 'tbd',
