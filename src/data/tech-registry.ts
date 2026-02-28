@@ -91,6 +91,8 @@ const TECH_REGISTRY = {
   '.NET': { color: '#512BD4' },
   'Deno': { color: '#000000' },
   'Bun': { color: '#FBF0DF' },
+  'WPF': { color: '#1959e2' },
+  'WinForm': { color: '#1959e2' },
 
   // ===== Mobile =====
   'React Native': { color: '#61DAFB' },

@@ -86,8 +86,9 @@ export const resumeConfig: ResumeConfig = {
       items: [
         { name: '.NET' },
         { name: 'OpenGL' },
-        { name: 'ImGUI' },
+        { name: 'ImGui' },
         { name: 'WPF' },
+        { name: 'WinForm' },
         { name: 'FMOD' },
         { name: 'Wwise' },
       ],
@@ -227,7 +228,7 @@ export const resumeConfig: ResumeConfig = {
         en: 'tbd',
         fr: 'TatouEngine est un moteur de jeu ECS réalisé sur C++ avec OpenGL, réalisé en 2 semaines. Il est mon projet de soutenance de dernière année. Je m\'intéresse spécialement à l\'ECS et aux structures de données, pour avoir les meilleures performances possibles pour un jeux vidéo.',
       },
-      techs: ['C++', 'OpenGL', 'ImGUI'],
+      techs: ['C++', 'OpenGL', 'ImGui'],
     },
     {
       id: 'project-b',
@@ -310,12 +311,11 @@ export const resumeConfig: ResumeConfig = {
 
   // ===== THEME =====
   theme: {
-    preset: 'warm', // 'minimal' | 'warm' | 'ocean' | 'forest' | 'slate' | 'lilac'
     // You can override individual colors:
-    // colors: {
-    //   primary: '#8B5A2B',
-    //   primaryLight: '#D4A574',
-    // },
+    colors: {
+      primary: '#2b8b5e',
+      primaryLight: '#74d4af',
+    },
   },
 
   // ===== UI LABELS =====
