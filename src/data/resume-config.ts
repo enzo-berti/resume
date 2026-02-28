@@ -312,6 +312,7 @@ export const resumeConfig: ResumeConfig = {
 
   // ===== THEME =====
   theme: {
+    preset: 'forest',
     // You can override individual colors:
     colors: {
       primary: '#2b8b5e',
