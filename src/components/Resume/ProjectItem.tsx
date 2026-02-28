@@ -1,15 +1,18 @@
 import { TechBadge } from './TechBadge'
-import { GitHubIcon, ExternalLinkIcon } from '@/components/icons'
+import { assetUrl } from '@/lib/utils'
+import { GitHubIcon, ExternalLinkIcon, ItchIcon } from '@/components/icons'
 
 interface ProjectItemProps {
   title: string
   description: string
   techs: string[]
+  images?: string[]
   url?: string
+  itchio?: string
   github?: string
 }
 
-export function ProjectItem({ title, description, techs, url, github }: ProjectItemProps) {
+export function ProjectItem({ title, description, techs, url, itchio, github, images }: ProjectItemProps) {
   return (
     <div className="py-3 px-3 -mx-3 rounded-lg hover:bg-resume-primary/5 transition-colors">
       <div className="flex items-center gap-2 mb-1">
@@ -17,6 +20,11 @@ export function ProjectItem({ title, description, techs, url, github }: ProjectI
         {url && (
           <a href={url} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${title}`}>
             <ExternalLinkIcon className="w-3.5 h-3.5 text-resume-primary" />
+          </a>
+        )}
+        {itchio && (
+          <a href={itchio} target="_blank" rel="noopener noreferrer" aria-label={`${title} on Itch`}>
+            <ItchIcon className="w-3.5 h-3.5 text-resume-primary" />
           </a>
         )}
         {github && (
@@ -29,6 +37,13 @@ export function ProjectItem({ title, description, techs, url, github }: ProjectI
       <div className="flex flex-wrap gap-1.5">
         {techs.map((tech) => (
           <TechBadge key={tech} tech={tech} />
+        ))}
+      </div>
+      <div className="flex flex-wrap gap-1.5">
+        {images?.map((image) => (
+            <img 
+            style={{height: 80, marginTop: 5.5, borderRadius: 7, }} 
+            src={assetUrl(image)} alt="Image" /> 
         ))}
       </div>
     </div>

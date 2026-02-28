@@ -93,7 +93,9 @@ export function MainContent() {
                 description={resolve(project.description)}
                 techs={project.techs}
                 url={project.url}
+                itchio={project.itchio}
                 github={project.github}
+                images={project.images}
               />
             ))}
           </div>

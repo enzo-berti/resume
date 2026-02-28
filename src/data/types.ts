@@ -62,7 +62,9 @@ export interface Project {
   description: LocalizedString
   techs: (TechName | (string & {}))[]
   url?: string
+  itchio?: string
   github?: string
+  images?: ((string & {}))[]
 }
 
 // ===== EDUCATION =====
