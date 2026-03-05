@@ -70,6 +70,7 @@ const TECH_REGISTRY = {
   'Clojure': { color: '#5881D8' },
   'Zig': { color: '#F7A41D' },
   'OCaml': { color: '#EC6813' },
+  'SQL': { color: '#003B57' },
 
   // ===== Backend Frameworks =====
   'Node.js': { color: '#339933' },

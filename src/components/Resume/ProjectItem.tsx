@@ -39,11 +39,11 @@ export function ProjectItem({ title, description, techs, url, itchio, github, im
           <TechBadge key={tech} tech={tech} />
         ))}
       </div>
-      <div className="flex flex-wrap gap-1.5">
+      <div className="flex gap-1.5" style={{maxHeight: 80, marginTop: 5.5, overflow:'none', overflowX: 'auto' }}>
         {images?.map((image) => (
             <img 
-            style={{height: 80, marginTop: 5.5, borderRadius: 7, }} 
-            src={assetUrl(image)} alt="Image" /> 
+            style={{height: 80, borderRadius: 7}} 
+            src={assetUrl(image)} alt="Image" />
         ))}
       </div>
     </div>

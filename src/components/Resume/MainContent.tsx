@@ -7,7 +7,7 @@ import { EducationItem } from './EducationItem'
 
 export function MainContent() {
   const { resolve, resolveArray } = useTranslation()
-  const { personal, experiences, projects, education, labels } = resumeConfig
+  const { personal, experiences, projects, gamejams, education, labels } = resumeConfig
   const [expandedExp, setExpandedExp] = useState<string | null>(null)
 
   const toggleExp = (id: string) => {
@@ -78,30 +78,7 @@ export function MainContent() {
           ))}
         </div>
       </div>
-
-      {/* Projects */}
-      {projects && projects.length > 0 && labels.sections.projects && (
-        <div className="mt-8">
-          <h2 className="text-sm font-bold tracking-widest text-resume-text mb-4 pb-2 border-b border-resume-primary/20">
-            {resolve(labels.sections.projects)}
-          </h2>
-          <div className="space-y-1">
-            {projects.map((project) => (
-              <ProjectItem
-                key={project.id}
-                title={resolve(project.title)}
-                description={resolve(project.description)}
-                techs={project.techs}
-                url={project.url}
-                itchio={project.itchio}
-                github={project.github}
-                images={project.images}
-              />
-            ))}
-          </div>
-        </div>
-      )}
-
+      
       {/* Education */}
       <div className="mt-8">
         <h2 className="text-sm font-bold tracking-widest text-resume-text mb-4 pb-2 border-b border-resume-primary/20">
@@ -120,6 +97,58 @@ export function MainContent() {
           ))}
         </div>
       </div>
+      
+      {/* Projects */}
+      {projects && projects.length > 0 && labels.sections.projects && (
+        <div className="mt-8">
+          <a href={'https://github.com/enzo-berti'} target="_blank" rel="noopener noreferrer" aria-label={'github page of my projects'}>
+            <h2 className="text-sm font-bold tracking-widest text-resume-text mb-4 pb-2 border-b border-resume-primary/20">
+              {resolve(labels.sections.projects)}
+            </h2>
+          </a>
+          <div className="space-y-1">
+            {projects.map((project) => (
+              <ProjectItem
+                key={project.id}
+                title={resolve(project.title)}
+                description={resolve(project.description)}
+                techs={project.techs}
+                url={project.url}
+                itchio={project.itchio}
+                github={project.github}
+                images={project.images}
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* GameJams */}
+      {gamejams && gamejams.length > 0 && labels.sections.gamejams && (
+        <div className="mt-8">
+          <a href={'https://itch.io/c/7015359/game-jams'} target="_blank" rel="noopener noreferrer" aria-label={'list of all the game jams made'}>
+            <h2 className="text-sm font-bold tracking-widest text-resume-text mb-4 pb-2 border-b border-resume-primary/20">
+              {resolve(labels.sections.gamejams)}
+            </h2>
+          </a>
+          <div className="space-y-1">
+            {gamejams.map((project) => (
+              <ProjectItem
+                key={project.id}
+                title={resolve(project.title)}
+                description={resolve(project.description)}
+                techs={project.techs}
+                url={project.url}
+                itchio={project.itchio}
+                github={project.github}
+                images={project.images}
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
+      
     </div>
   )
 }

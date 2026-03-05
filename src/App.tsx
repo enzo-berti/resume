@@ -1,14 +1,10 @@
-import { lazy, Suspense, useEffect } from 'react'
+import { Suspense, useEffect } from 'react'
 import { LanguageProvider } from '@/lib/i18n'
 import { ThemeProvider, useTheme } from '@/lib/theme'
 import { Resume } from '@/components/Resume'
 import { presets } from '@/data/presets'
 import type { PresetName } from '@/data/types'
 import { resumeConfig } from '@/data/resume-config'
-
-const Agentation = lazy(() =>
-  import('agentation').then((m) => ({ default: m.Agentation }))
-)
 
 /**
  * Sets document title and meta description at runtime.
@@ -89,9 +85,7 @@ export default function App() {
       {import.meta.env.DEV && (
         <>
           <DevPresetSelector />
-          <Suspense>
-            <Agentation />
-          </Suspense>
+          <Suspense />
         </>
       )}
     </ThemeProvider>

@@ -116,6 +116,7 @@ export interface ResumeLabels {
     experience: LocalizedString
     education: LocalizedString
     projects?: LocalizedString
+    gamejams?: LocalizedString
     hobbies?: LocalizedString
   }
   experience: {
@@ -157,6 +158,7 @@ export interface ResumeConfig {
   experiences: Experience[]
   education: Education[]
   projects?: Project[]
+  gamejams?: Project[]
   hobbies?: Hobby[]
   pdf?: {
     label?: LocalizedString

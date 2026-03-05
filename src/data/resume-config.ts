@@ -61,6 +61,7 @@ export const resumeConfig: ResumeConfig = {
         { name: 'C' },
         { name: 'Lua' },
         { name: 'Python' },
+        { name: 'SQL'},
       ],
     },
     {
@@ -88,6 +89,7 @@ export const resumeConfig: ResumeConfig = {
         { name: 'OpenGL' },
         { name: 'ImGui' },
         { name: 'WPF' },
+        { name: 'SQLite'},
         { name: 'WinForm' },
         { name: 'FMOD' },
         { name: 'Wwise' },
@@ -224,7 +226,7 @@ export const resumeConfig: ResumeConfig = {
   projects: [
     {
       id: 'personal-project',
-      title: { en: 'ECS Game Engine', fr: 'ECS Game Engine' },
+      title: { en: 'ECS Game Engine', fr: 'Moteur de jeu ECS' },
       description: {
         en: 'tbd',
         fr: 'TatouEngine est un moteur de jeu ECS réalisé en 2 semaines sur C++ avec OpenGL. Il est mon projet de soutenance de dernière année. Je m\'intéresse spécialement à l\'ECS et aux structures de données, pour avoir les meilleures performances possibles pour un jeux vidéo.',
@@ -250,10 +252,49 @@ export const resumeConfig: ResumeConfig = {
         en: 'tbd',
         fr: 'Durant ce projet, j\'ai développé la génération procédurale des niveaux et mis en place l\'intégration d\'Houdini dans Unity pour concevoir et tester les environnements. J\'ai également collaboré étroitement avec les graphistes responsables de l\'éclairage, en leur proposant une solution permettant de pré-calculer les lumières des prefabs.',
       },
-      images: ['/projects/netherveil_a.png', '/projects/netherveil_b.png', '/projects/netherveil_c.png'],
+      images: ['/projects/netherveil_a.png', '/projects/netherveil_a.png', '/projects/netherveil_b.png', '/projects/netherveil_c.png'],
       techs: ['Unity', 'C#', 'FMOD'],
       itchio: 'https://toraenor.itch.io/netherveil',
       github: 'https://github.com/SmoothBrainStudio/Netherveil',
+    },
+    {
+      id: 'school-project-c',
+      title: { en: 'Tie-d To The Past', fr: 'Tie-d To The Past' },
+      description: {
+        en: 'tbd',
+        fr: 'tbd',
+      },
+      images: ['/projects/tiedtothepast_a.png', '/projects/tiedtothepast_b.png', '/projects/tiedtothepast_c.png'],
+      techs: ['C++', 'SFML', 'Tiled'],
+      itchio: 'https://toraenor.itch.io/tie-d-to-the-past',
+      github: 'https://github.com/SmoothBrainStudio/tied-to-the-past',
+    },
+  ],
+
+  gamejams: [
+    {
+      id: 'gamejam-a',
+      title: { en: 'SuperSpeed SPA', fr: 'SuperSpeed SPA' },
+      description: {
+        en: 'tbd',
+        fr: 'tbd',
+      },
+      images: ['/gamejams/superspeedspa_a.png', '/gamejams/superspeedspa_b.png', '/gamejams/superspeedspa_c.png'],
+      techs: ['Godot', 'GD'],
+      itchio: 'https://maitrerenardeau.itch.io/superspeed-spa',
+      github: 'https://github.com/enzo-berti/superspeed-spa',
+    },
+    {
+      id: 'gamejam-b',
+      title: { en: 'Demons&Deadlines', fr: 'Demons&Deadlines' },
+      description: {
+        en: 'tbd',
+        fr: 'tbd',
+      },
+      images: ['/gamejams/demonsdeadlines_a.png', '/gamejams/demonsdeadlines_b.png', '/gamejams/demonsdeadlines_c.png'],
+      techs: ['Unity', 'C#'],
+      itchio: 'https://github.com/enzo-berti/demons-deadlines',
+      github: 'https://github.com/SmoothBrainStudio/tied-to-the-past',
     },
   ],
 
@@ -330,6 +371,7 @@ export const resumeConfig: ResumeConfig = {
       experience: { en: 'PROFESSIONAL EXPERIENCE', fr: 'EXPÉRIENCES PROFESSIONNELLES' },
       education: { en: 'EDUCATION', fr: 'FORMATION' },
       projects: { en: 'PROJECTS', fr: 'PROJETS' },
+      gamejams: { en: 'GAME JAMS', fr: 'GAME JAMS'},
       hobbies: { en: 'HOBBIES', fr: 'LOISIRS' },
     },
     experience: {
