@@ -26,7 +26,7 @@ export interface SkillItem {
   name: string | LocalizedString
   color?: string
   level?: LocalizedString
-  details?: string
+  details?: LocalizedString
 }
 
 // ===== EXPERIENCES =====

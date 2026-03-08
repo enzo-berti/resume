@@ -26,7 +26,7 @@ export const resumeConfig: ResumeConfig = {
   // ===== LANGUAGES =====
   languages: {
     default: 'fr',
-    available: ['fr'],
+    available: ['fr', 'en'],
     labels: {
       en: 'EN',
       fr: 'FR',
@@ -49,7 +49,9 @@ export const resumeConfig: ResumeConfig = {
       type: 'languages',
       items: [
         { name: { en: 'French', fr: 'Français' }, level: { en: 'Native', fr: 'Natif' } },
-        { name: { en: 'English', fr: 'Anglais' }, level: { en: 'Professional', fr: 'Professionnel' }, details: 'Passage du TOEIC en cours' },
+        { name: { en: 'English', fr: 'Anglais' }, level: { en: 'Professional', fr: 'Professionnel' }, details: { en: 'TOEIC exam in progress', fr: 'Passage du TOEIC en cours' } },
+        { name: { en: 'Spanish', fr: 'Espagnol' }, level: { en: 'School', fr: 'Scolaire' }},
+        { name: { en: 'German', fr: 'Allemand' }, level: { en: 'School', fr: 'Scolaire' }},
       ],
     },
     {
@@ -96,12 +98,13 @@ export const resumeConfig: ResumeConfig = {
       ],
     },
     {
-      title: { en: 'Pro tools', fr: 'Outils professionnels' },
+      title: { en: 'Professional tools', fr: 'Outils professionnel' },
       type: 'badges',
       items: [
-        { name: 'Visual Studio' },
         { name: 'Rider' },
-        { name: 'Git' },
+        { name: 'Visual Studio' },
+        { name: 'Visual Studio Code' },
+        { name: 'Turtoise SVN' },
         { name: 'GitHub' },
         { name: 'Trello' },
         { name: 'Figma' },
@@ -123,30 +126,31 @@ export const resumeConfig: ResumeConfig = {
   experiences: [
     {
       id: 'freelance-a',
-      company: { en: 'Freelance Developer', fr: 'Projet non annoncé' },
-      role: { en: 'Software Developer', fr: 'Lead Développeur Unreal Engine' },
+      company: { en: 'Non annonced project', fr: 'Projet non annoncé' },
+      role: { en: 'Lead Unreal Engine Programmer', fr: 'Lead Développeur Unreal Engine' },
       type: { en: 'Freelance', fr: 'Freelance' },
       period: { en: '2026 - Now', fr: '2026 - Présent' },
       description: {
-        en: 'tbd.',
+        en: 'Help a team of 7 students.',
         fr: 'Aide une équipe de 7 personnes étudiantes',
       },
       techs: ['Unreal Engine 5', 'C++', 'Blueprint'],
       isHighlighted: true,
       details: {
         context: {
-          en: 'tbd.',
-          fr: '⚠️ Ce projet ne prend pas le dessus sur le professionnelles. J\'aide actuellement plusieurs étudiant du CNAM Enjmin à développer un jeu professionnelle sur Unreal Engine. Je vérifie, corrige les scripts et donne un nouveau point de vu sur comment développer un projet à long terme',
+          en: 'I\'m actually helping a group of student at CNAM Enjmin for developing a professional game. I check, fix the scripts and give a new point of view on how to develop a long term project',
+          fr: 'J\'aide actuellement plusieurs étudiant du CNAM Enjmin à développer un jeu professionnelle. Je vérifie, corrige les scripts et donne un nouveau point de vu sur comment développer un projet à long terme',
         },
         tasks: {
           en: [
-            'tbd',
-            'tbd',
+            'Git master',
+            'Fixing bugs',
+            'Creation of tools for game designers',
           ],
           fr: [
             'Vérification des commits sur git',
             'Correction de bug',
-            'Création d\'outils pour les développeurs',
+            'Création d\'outils pour les game designers',
           ],
         },
         env: {
@@ -170,7 +174,7 @@ export const resumeConfig: ResumeConfig = {
       details: {
         context: {
           en: 'tbd.',
-          fr: 'Au cours de mes études je me suis lancé dans le développement freelance pour gagner de l\'expérience dans le développement de jeu vidéo. Grâce à cette expérience j\'ai pu apprendre plus concrètement comment travailler avec des clients.',
+          fr: 'Au cours de mes études je me suis lancé dans le développement freelance pour gagner de l\'expérience. Grâce à cela j\'ai pu apprendre plus concrètement comment travailler avec des clients.',
         },
         tasks: {
           en: [
@@ -204,19 +208,21 @@ export const resumeConfig: ResumeConfig = {
       details: {
         context: {
           en: 'tbd.',
-          fr: 'Développement du character controller et des destructions procédurales d\'objets.',
+          fr: 'Stage professionnel de 6 mois pour confirmer ma dernière année au sein de Creajeux.',
         },
         tasks: {
           en: [
             'tbd',
           ],
           fr: [
-            'Optimisation',
+            'Développement de destruction de mesh procédurale',
+            'Character controller',
+            'Optimisation du moteur',
           ],
         },
         env: {
           en: 'tbd',
-          fr: 'Visual Studio Code',
+          fr: 'Visual Studio, Turtoise SVN, Unity',
         },
       },
     },
@@ -252,7 +258,7 @@ export const resumeConfig: ResumeConfig = {
         en: 'tbd',
         fr: 'Durant ce projet, j\'ai développé la génération procédurale des niveaux et mis en place l\'intégration d\'Houdini dans Unity pour concevoir et tester les environnements. J\'ai également collaboré étroitement avec les graphistes responsables de l\'éclairage, en leur proposant une solution permettant de pré-calculer les lumières des prefabs.',
       },
-      images: ['/projects/netherveil_a.png', '/projects/netherveil_a.png', '/projects/netherveil_b.png', '/projects/netherveil_c.png'],
+      images: ['/projects/netherveil_a.png', '/projects/netherveil_b.png', '/projects/netherveil_c.png'],
       techs: ['Unity', 'C#', 'FMOD'],
       itchio: 'https://toraenor.itch.io/netherveil',
       github: 'https://github.com/SmoothBrainStudio/Netherveil',

@@ -125,9 +125,7 @@ export function Sidebar() {
                       <span key={`${name}-${j}`} className="flex items-center gap-1">
                         <span className="text-resume-text-secondary">
                           {name} {item.level ? resolve(item.level) : ''}
-                          {item.details && (
-                            <span className="text-xs opacity-70 ml-1">{item.details}</span>
-                          )}
+                          {<span className="text-xs opacity-70 ml-1">{item.details ? resolve(item.details) : ''}</span>}
                         </span>
                       </span>
                     )
