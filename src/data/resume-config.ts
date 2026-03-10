@@ -139,7 +139,7 @@ export const resumeConfig: ResumeConfig = {
       details: {
         context: {
           en: 'I\'m actually helping a group of student at CNAM Enjmin for developing a professional game. I check, fix the scripts and give a new point of view on how to develop a long term project',
-          fr: 'J\'aide actuellement plusieurs étudiant du CNAM Enjmin à développer un jeu professionnelle. Je vérifie, corrige les scripts et donne un nouveau point de vu sur comment développer un projet à long terme',
+          fr: 'J\'aide plusieurs étudiants du CNAM Enjmin à développer un jeu professionnel. Je vérifie, corrige les scripts et donne un nouveau point de vue sur comment développer un projet à long terme',
         },
         tasks: {
           en: [
@@ -148,7 +148,8 @@ export const resumeConfig: ResumeConfig = {
             'Creation of tools for game designers',
           ],
           fr: [
-            'Vérification des commits sur git',
+            'Git master',
+            'Character controler',
             'Correction de bug',
             'Création d\'outils pour les game designers',
           ],
@@ -160,6 +161,38 @@ export const resumeConfig: ResumeConfig = {
       },
     },
     {
+      id: 'internship',
+      company: { en: 'Paradox Polygon', fr: 'Paradox Polygon' },
+      role: { en: 'Unity Developer Intern', fr: 'Stagiaire Développeur Unity C# .NET' },
+      type: { en: 'Internship', fr: 'Stage' },
+      period: { en: '01/2025 - 06/2025', fr: '01/2025 - 06/2025' },
+      description: {
+        en: 'tbd.',
+        fr: 'Contribution au développement d\'un jeu vidéo. Acquisition d\'expérience en développement d\'outils sur Windows et Unity.',
+      },
+      techs: ['C#', '.NET', 'Unity', 'WPF'],
+      details: {
+        context: {
+          en: 'tbd.',
+          fr: 'Stage professionnel de 6 mois pour confirmer ma dernière année de licence.',
+        },
+        tasks: {
+          en: [
+            'tbd',
+          ],
+          fr: [
+            'Développement de destruction de meshs procéduraux',
+            'Character controller',
+            'Optimisation',
+          ],
+        },
+        env: {
+          en: 'tbd',
+          fr: 'Visual Studio, Turtoise SVN',
+        },
+      },
+    },
+    {
       id: 'freelance-school',
       company: { en: 'Freelance Developer', fr: 'Développeur Freelance' },
       role: { en: 'Software Developer', fr: 'Développeur Unity & Unreal' },
@@ -167,13 +200,13 @@ export const resumeConfig: ResumeConfig = {
       period: { en: '2024 - 2025', fr: '2024 - 2025' },
       description: {
         en: 'tbd.',
-        fr: 'Développement gameplay en freelance pour plusieurs particulié.',
+        fr: 'Développement gameplay en freelance pour plusieurs particuliers.',
       },
       techs: ['Unity', 'C#', 'C++', 'WPF'],
       isHighlighted: false,
       details: {
         context: {
-          en: 'tbd.',
+          en: 'During my studies I started developing in freelance to gain experience. Thanks to this I learn how to work with clients.',
           fr: 'Au cours de mes études je me suis lancé dans le développement freelance pour gagner de l\'expérience. Grâce à cela j\'ai pu apprendre plus concrètement comment travailler avec des clients.',
         },
         tasks: {
@@ -194,38 +227,6 @@ export const resumeConfig: ResumeConfig = {
         },
       },
     },
-    {
-      id: 'internship',
-      company: { en: 'Paradox Polygon', fr: 'Paradox Polygon' },
-      role: { en: 'Unity Developer Intern', fr: 'Stagiaire Développeur Unity' },
-      type: { en: 'Internship', fr: 'Stage' },
-      period: { en: '01/2025 - 06/2025', fr: '01/2025 - 06/2025' },
-      description: {
-        en: 'tbd.',
-        fr: 'Contribution au développement d\'un jeu vidéo. Acquisition d\'expérience en développement d\'outils sur Windows et Unity.',
-      },
-      techs: ['C#', '.NET', 'Unity'],
-      details: {
-        context: {
-          en: 'tbd.',
-          fr: 'Stage professionnel de 6 mois pour confirmer ma dernière année au sein de Creajeux.',
-        },
-        tasks: {
-          en: [
-            'tbd',
-          ],
-          fr: [
-            'Développement de destruction de mesh procédurale',
-            'Character controller',
-            'Optimisation du moteur',
-          ],
-        },
-        env: {
-          en: 'tbd',
-          fr: 'Visual Studio, Turtoise SVN, Unity',
-        },
-      },
-    },
   ],
 
   // ===== PROJECTS =====
@@ -235,7 +236,7 @@ export const resumeConfig: ResumeConfig = {
       title: { en: 'ECS Game Engine', fr: 'Moteur de jeu ECS' },
       description: {
         en: 'tbd',
-        fr: 'TatouEngine est un moteur de jeu ECS réalisé en 2 semaines sur C++ avec OpenGL. Il est mon projet de soutenance de dernière année. Je m\'intéresse spécialement à l\'ECS et aux structures de données, pour avoir les meilleures performances possibles pour un jeux vidéo.',
+        fr: 'TatouEngine est un moteur de jeu ECS réalisé en 2 semaines sur C++ avec OpenGL. Il est mon projet de soutenance de dernière année. Je m\'intéresse spécialement à l\'ECS et aux structures de données, pour tirer les meilleures performances possibles.',
       },
       techs: ['C++', 'OpenGL', 'ImGui'],
     },
@@ -244,7 +245,7 @@ export const resumeConfig: ResumeConfig = {
       title: { en: 'SeedWagon', fr: 'SeedWagon' },
       description: {
         en: 'tbd',
-        fr: 'SeedWagon est le premier projet Unreal Engine sur lequel j\'ai travaillé. J\'y ai pu concevoir le level design grâce au Terrain Tool et faire des outils de création d\'énigmes pour les game designers. J\'ai pu par la suite rentrer un peu plus dans les entrailles du moteur en optimisant le rendu du jeu et le monde ouvert.',
+        fr: 'SeedWagon est le premier projet Unreal Engine sur lequel j\'ai travaillé. J\'ai pu concevoir le level design grâce au Terrain Tool et faire des outils de création d\'énigmes pour les game designers. J\'ai pu par la suite rentrer un peu plus dans les entrailles du moteur en optimisant le rendu du jeu et le monde ouvert.',
       },
       techs: ['Unreal Engine 5', 'C++', 'Blueprint'],
       images: ['/projects/seedwagon_a.png', '/projects/seedwagon_b.png', '/projects/seedwagon_c.png'],
@@ -256,7 +257,7 @@ export const resumeConfig: ResumeConfig = {
       title: { en: 'Netherveil', fr: 'Netherveil' },
       description: {
         en: 'tbd',
-        fr: 'Durant ce projet, j\'ai développé la génération procédurale des niveaux et mis en place l\'intégration d\'Houdini dans Unity pour concevoir et tester les environnements. J\'ai également collaboré étroitement avec les graphistes responsables de l\'éclairage, en leur proposant une solution permettant de pré-calculer les lumières des prefabs.',
+        fr: 'Durant ce projet, j\'ai développé la génération procédurale des niveaux et mis en place l\'intégration d\'Houdini dans Unity pour concevoir et tester les environnements. J\'ai également collaboré étroitement avec les graphistes responsables de l\'éclairage, en leur proposant une solution permettant de précalculer les lumières des prefabs.',
       },
       images: ['/projects/netherveil_a.png', '/projects/netherveil_b.png', '/projects/netherveil_c.png'],
       techs: ['Unity', 'C#', 'FMOD'],
@@ -268,7 +269,7 @@ export const resumeConfig: ResumeConfig = {
       title: { en: 'Tie-d To The Past', fr: 'Tie-d To The Past' },
       description: {
         en: 'tbd',
-        fr: 'tbd',
+        fr: 'Ceci est le projet le plus technique que j\'ai réalisé. Nous avons codé, sans aucun moteur de jeux, une multitude d\'outils pour façonner notre jeu. Je me suis personnellement chargé de créer un outil d\'édition de map (un peu comme la view scene de godot) ainsi que de la création des managers des ressources ainsi que du système de sauvegarde du jeu.',
       },
       images: ['/projects/tiedtothepast_a.png', '/projects/tiedtothepast_b.png', '/projects/tiedtothepast_c.png'],
       techs: ['C++', 'SFML', 'Tiled'],
@@ -283,10 +284,10 @@ export const resumeConfig: ResumeConfig = {
       title: { en: 'SuperSpeed SPA', fr: 'SuperSpeed SPA' },
       description: {
         en: 'tbd',
-        fr: 'tbd',
+        fr: 'Prix du Public The Global Game Jam 2026 à Strasbourg ! C\'est un jeu fait en 48h. Mon défi personnel pendant cette jam a été d\'apprendre et coder sur un langage et moteur de jeux complètement inconnu à mes yeux, Godot.',
       },
       images: ['/gamejams/superspeedspa_a.png', '/gamejams/superspeedspa_b.png', '/gamejams/superspeedspa_c.png'],
-      techs: ['Godot', 'GD'],
+      techs: ['Godot', 'GDScript'],
       itchio: 'https://maitrerenardeau.itch.io/superspeed-spa',
       github: 'https://github.com/enzo-berti/superspeed-spa',
     },
@@ -294,8 +295,8 @@ export const resumeConfig: ResumeConfig = {
       id: 'gamejam-b',
       title: { en: 'Demons&Deadlines', fr: 'Demons&Deadlines' },
       description: {
-        en: 'tbd',
-        fr: 'tbd',
+        en: '48 hours game jam. The challenge of this jam is that I was the only developpeur of the group. Moreover the type of the game \"type game\" was completly stranger to me',
+        fr: 'Jeu conçu en 48h. Le défi de cette jam a été d\'être le seul programmeur du groupe. De plus, le style du jeu qui est un \"type game\" était complètement inconnu à mes yeux',
       },
       images: ['/gamejams/demonsdeadlines_a.png', '/gamejams/demonsdeadlines_b.png', '/gamejams/demonsdeadlines_c.png'],
       techs: ['Unity', 'C#'],
@@ -315,7 +316,7 @@ export const resumeConfig: ResumeConfig = {
     {
       school: { en: 'Creajeux', fr: 'Creajeux' },
       degree: { en: 'Preparatory class', fr: 'Classe préparatoire aux grandes écoles' },
-      specialty: { en: 'Mathematics and Computer Science', fr: 'Mathématiques et informatique' },
+      specialty: { en: 'Mathematics and Computer Science', fr: 'Mathématiques et informatiques' },
       period: '2021 - 2022',
     },
     {
