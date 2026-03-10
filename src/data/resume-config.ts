@@ -295,8 +295,8 @@ export const resumeConfig: ResumeConfig = {
       id: 'gamejam-b',
       title: { en: 'Demons&Deadlines', fr: 'Demons&Deadlines' },
       description: {
-        en: '48 hours game jam. The challenge of this jam is that I was the only developpeur of the group. Moreover the type of the game \"type game\" was completly stranger to me',
-        fr: 'Jeu conçu en 48h. Le défi de cette jam a été d\'être le seul programmeur du groupe. De plus, le style du jeu qui est un \"type game\" était complètement inconnu à mes yeux',
+        en: 'This game was made in 48 hours. The challenge of this jam is that I was the only developpeur of the group. Moreover the type of the game «type game» was completly stranger to me',
+        fr: 'Jeu conçu en 48 heures. Le défi de cette jam a été d\'être le seul programmeur du groupe. De plus, le style du jeu qui est un «type game» était complètement inconnu à mes yeux',
       },
       images: ['/gamejams/demonsdeadlines_a.png', '/gamejams/demonsdeadlines_b.png', '/gamejams/demonsdeadlines_c.png'],
       techs: ['Unity', 'C#'],
