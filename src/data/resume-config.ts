@@ -7,11 +7,11 @@ export const resumeConfig: ResumeConfig = {
     photo: '/images/photo.jpg', // Place your photo in public/images/
     photoBackEmoji: '🦆', // Shown when clicking the photo (3D flip)
     title: {
-      en: 'Game Developper',
-      fr: 'Développeur Gameplay',
+      en: 'Software Developer',
+      fr: 'Développeur Logiciel',
     },
     subtitle: {
-      en: 'tbd',
+      en: 'Junior in the search of a good adventure',
       fr: 'Junior à la recherche d\'une belle expérience',
     },
     location: 'Strasbourg, France',
@@ -19,8 +19,8 @@ export const resumeConfig: ResumeConfig = {
 
   // ===== SEO (used in <head> meta tags) =====
   seo: {
-    title: 'Enzo Berti - Game Developper',
-    description: 'Interactive resume of Enzo Berti, Gameplay Developper specializing in c++, unity and unreal engine.',
+    title: 'Enzo Berti - Software Developer',
+    description: 'Interactive resume of Enzo Berti, Software Developer specializing in C++, C#, .NET, Unity and Unreal Engine.',
   },
 
   // ===== LANGUAGES =====
@@ -144,6 +144,7 @@ export const resumeConfig: ResumeConfig = {
         tasks: {
           en: [
             'Git master',
+            'Character controler',
             'Fixing bugs',
             'Creation of tools for game designers',
           ],
@@ -167,18 +168,20 @@ export const resumeConfig: ResumeConfig = {
       type: { en: 'Internship', fr: 'Stage' },
       period: { en: '01/2025 - 06/2025', fr: '01/2025 - 06/2025' },
       description: {
-        en: 'tbd.',
-        fr: 'Contribution au développement d\'un jeu vidéo. Acquisition d\'expérience en développement d\'outils sur Windows et Unity.',
+        en: 'Contributing in the development of a video game. Acquisition of experience in tool\'s development in Windows and Unity',
+        fr: 'Contribution au développement d\'un jeu vidéo. Acquisition d\'expérience en développement d\'outils sur Windows et Unity',
       },
       techs: ['C#', '.NET', 'Unity', 'WPF'],
       details: {
         context: {
-          en: 'tbd.',
-          fr: 'Stage professionnel de 6 mois pour confirmer ma dernière année de licence.',
+          en: 'Professional internship of 6 month for my final year of bachelor\'s',
+          fr: 'Stage professionnel de 6 mois pour confirmer ma dernière année de licence',
         },
         tasks: {
           en: [
-            'tbd',
+            'Development of procedurals mesh destruction',
+            'Character controller',
+            'Optimisation',
           ],
           fr: [
             'Développement de destruction de meshs procéduraux',
@@ -199,21 +202,21 @@ export const resumeConfig: ResumeConfig = {
       type: { en: 'Freelance', fr: 'Freelance' },
       period: { en: '2024 - 2025', fr: '2024 - 2025' },
       description: {
-        en: 'tbd.',
-        fr: 'Développement gameplay en freelance pour plusieurs particuliers.',
+        en: 'Gameplay development in freelance with multiple individuals',
+        fr: 'Développement gameplay en freelance pour plusieurs particuliers',
       },
-      techs: ['Unity', 'C#', 'C++', 'WPF'],
+      techs: ['C++', 'C#', '.NET', 'Unity', 'Unreal Engine 5'],
       isHighlighted: false,
       details: {
         context: {
-          en: 'During my studies I started developing in freelance to gain experience. Thanks to this I learn how to work with clients.',
-          fr: 'Au cours de mes études je me suis lancé dans le développement freelance pour gagner de l\'expérience. Grâce à cela j\'ai pu apprendre plus concrètement comment travailler avec des clients.',
+          en: 'During my studies I started developing in freelance to gain experience. Thanks to this I learn how to work with clients',
+          fr: 'Au cours de mes études je me suis lancé dans le développement freelance pour gagner de l\'expérience. Grâce à cela j\'ai pu apprendre plus concrètement comment travailler avec des clients',
         },
         tasks: {
           en: [
-            'tbd',
-            'tbd',
-            'tbd',
+            'Rewrite architecture',
+            'Tools development',
+            'Gameplay development',
           ],
           fr: [
             'Réécriture d\'architecture de code',
@@ -295,7 +298,7 @@ export const resumeConfig: ResumeConfig = {
       id: 'gamejam-b',
       title: { en: 'Demons&Deadlines', fr: 'Demons&Deadlines' },
       description: {
-        en: 'This game was made in 48 hours. The challenge of this jam is that I was the only developpeur of the group. Moreover the type of the game «type game» was completly stranger to me',
+        en: 'This game was made in 48 hours. The challenge of this jam was that I\'m the only developer of the group. Moreover the type of the game «type game» was completly stranger to me',
         fr: 'Jeu conçu en 48 heures. Le défi de cette jam a été d\'être le seul programmeur du groupe. De plus, le style du jeu qui est un «type game» était complètement inconnu à mes yeux',
       },
       images: ['/gamejams/demonsdeadlines_a.png', '/gamejams/demonsdeadlines_b.png', '/gamejams/demonsdeadlines_c.png'],
@@ -309,7 +312,7 @@ export const resumeConfig: ResumeConfig = {
   education: [
     {
       school: { en: 'Creajeux', fr: 'Creajeux' },
-      degree: { en: 'Bachelor Software engineer', fr: 'Licence informatique' },
+      degree: { en: 'Bachelor computer science', fr: 'Licence informatique' },
       specialty: { en: 'C#, C++, Unity, Unreal Engine', fr: 'C#, C++, Unity, Unreal Engine' },
       period: '2022 - 2025',
     },
@@ -321,7 +324,7 @@ export const resumeConfig: ResumeConfig = {
     },
     {
       school: { en: 'Dhuoda', fr: 'Dhuoda' },
-      degree: { en: 'tbd', fr: 'Baccalauréat Général S' },
+      degree: { en: 'High School Diploma in Science', fr: 'Baccalauréat Général S' },
       specialty: { en: 'Mathematics and Computer Science', fr: 'Mathématique, Numérique et Sciences Informatiques' },
       period: '2018 - 2021',
     },
