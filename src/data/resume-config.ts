@@ -129,7 +129,7 @@ export const resumeConfig: ResumeConfig = {
       company: { en: 'Freelance Developer', fr: 'Développeur Freelance' },
       role: { en: 'Software Developer', fr: 'Développeur Unity & Unreal' },
       type: { en: 'Freelance', fr: 'Freelance' },
-      period: { en: '2025 - Now', fr: '2025 - Présent' },
+      period: { en: '2024 - Now', fr: '2024 - Présent' },
       description: {
         en: 'Gameplay development in freelance with multiple individuals',
         fr: 'Développement gameplay en freelance pour plusieurs particuliers',
