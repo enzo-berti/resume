@@ -4,15 +4,15 @@ export const resumeConfig: ResumeConfig = {
   // ===== PERSONAL INFO =====
   personal: {
     name: 'Enzo Berti',
-    photo: '/images/photo.jpg', // Place your photo in public/images/
-    photoBackEmoji: '🦆', // Shown when clicking the photo (3D flip)
+    photo: '/images/photo.jpg',
+    photoBackEmoji: '🦆',
     title: {
       en: 'Software Developer',
       fr: 'Développeur Logiciel',
     },
     subtitle: {
-      en: 'Junior in the search of a good adventure',
-      fr: 'Junior à la recherche d\'une belle expérience',
+      en: 'Developeur in the search of a new experience',
+      fr: 'Développeur à la recherche de nouvelles expériences',
     },
     location: 'Strasbourg, France',
   },
@@ -26,7 +26,7 @@ export const resumeConfig: ResumeConfig = {
   // ===== LANGUAGES =====
   languages: {
     default: 'fr',
-    available: ['fr', 'en'],
+    available: ['fr'],
     labels: {
       en: 'EN',
       fr: 'FR',
@@ -112,18 +112,54 @@ export const resumeConfig: ResumeConfig = {
         { name: 'Draw.io' },
       ],
     },
-    //{
-    //  title: { en: 'Methodologies', fr: 'Méthodologies' },
-    //  type: 'text',
-    //  items: [
-    //    { name: { en: 'Scrum' } },
-    //    { name: { en: 'Agile' } },
-    // ],
-    //},
+    {
+      title: { en: 'Methodologies', fr: 'Méthodologies' },
+      type: 'text',
+      items: [
+        { name: { en: 'Scrum' } },
+        { name: { en: 'Agile' } },
+     ],
+    },
   ],
 
   // ===== PROFESSIONAL EXPERIENCES =====
   experiences: [
+    {
+      id: 'freelance-school',
+      company: { en: 'Freelance Developer', fr: 'Développeur Freelance' },
+      role: { en: 'Software Developer', fr: 'Développeur Unity & Unreal' },
+      type: { en: 'Freelance', fr: 'Freelance' },
+      period: { en: '2025 - Now', fr: '2025 - Présent' },
+      description: {
+        en: 'Gameplay development in freelance with multiple individuals',
+        fr: 'Développement gameplay en freelance pour plusieurs particuliers',
+      },
+      techs: ['C++', 'C#', '.NET', 'Unity', 'Godot', 'Unreal Engine 5'],
+      isHighlighted: false,
+      details: {
+        context: {
+          en: 'During my studies I started developing in freelance to gain experience. Thanks to this I learn how to work with clients',
+          fr: 'Au cours de mes études je me suis lancé dans le développement freelance pour gagner de l\'expérience. Grâce à cela j\'ai pu apprendre plus concrètement comment travailler avec des clients. Désormais je continue la freelance pour aider ceux dans le besoin d\'un développeur expérience dans le jeu vidéo',
+        },
+        tasks: {
+          en: [
+            'Rewrite architecture',
+            'Tools development',
+            'Gameplay development',
+          ],
+          fr: [
+            'Réécriture d\'architecture de code',
+            'Développement d\'outils',
+            'Développement gameplay',
+            'Game Design',
+          ],
+        },
+        env: {
+          en: 'Visual Studio, Visual Studio Code, Git, TortoiseSVN, Trello',
+          fr: 'Visual Studio, Visual Studio Code, Git, TortoiseSVN, Trello',
+        },
+      },
+    },
     {
       id: 'freelance-a',
       company: { en: 'Non annonced project', fr: 'Projet non annoncé' },
@@ -132,7 +168,7 @@ export const resumeConfig: ResumeConfig = {
       period: { en: '2026 - Now', fr: '2026 - Présent' },
       description: {
         en: 'Help a team of 7 students.',
-        fr: 'Aide une équipe de 7 personnes étudiantes',
+        fr: 'Aide une équipe de 7 personnes étudiants',
       },
       techs: ['Unreal Engine 5', 'C++', 'Blueprint'],
       isHighlighted: true,
@@ -195,41 +231,6 @@ export const resumeConfig: ResumeConfig = {
         },
       },
     },
-    {
-      id: 'freelance-school',
-      company: { en: 'Freelance Developer', fr: 'Développeur Freelance' },
-      role: { en: 'Software Developer', fr: 'Développeur Unity & Unreal' },
-      type: { en: 'Freelance', fr: 'Freelance' },
-      period: { en: '2024 - 2025', fr: '2024 - 2025' },
-      description: {
-        en: 'Gameplay development in freelance with multiple individuals',
-        fr: 'Développement gameplay en freelance pour plusieurs particuliers',
-      },
-      techs: ['C++', 'C#', '.NET', 'Unity', 'Unreal Engine 5'],
-      isHighlighted: false,
-      details: {
-        context: {
-          en: 'During my studies I started developing in freelance to gain experience. Thanks to this I learn how to work with clients',
-          fr: 'Au cours de mes études je me suis lancé dans le développement freelance pour gagner de l\'expérience. Grâce à cela j\'ai pu apprendre plus concrètement comment travailler avec des clients',
-        },
-        tasks: {
-          en: [
-            'Rewrite architecture',
-            'Tools development',
-            'Gameplay development',
-          ],
-          fr: [
-            'Réécriture d\'architecture de code',
-            'Développement d\'outils',
-            'Développement gameplay',
-          ],
-        },
-        env: {
-          en: 'Visual Studio Code, Git, TortoiseSVN, Trello',
-          fr: 'Visual Studio Code, Git, TortoiseSVN, Trello',
-        },
-      },
-    },
   ],
 
   // ===== PROJECTS =====
@@ -284,6 +285,18 @@ export const resumeConfig: ResumeConfig = {
   gamejams: [
     {
       id: 'gamejam-a',
+      title: { en: 'Une pure soirée', fr: 'Une pure soirée' },
+      description: {
+        en: 'tbd',
+        fr: 'No Crunch Game Jam 6 de Creat\'N Connect à Strasbourg ! Nous avons eu 3 jours avec l\'interdiction de crunch pour développer ce jeu, tout ça en distanciel avec une équipe de 6 incroyables personnes',
+      },
+      images: ['/gamejams/unepuresoiree_a.png', '/gamejams/unepuresoiree_b.png'],
+      techs: ['Godot', 'GDScript'],
+      itchio: 'https://peterlebagarreur.itch.io/une-pure-soiree',
+      github: 'https://github.com/enzo-berti/superspeed-spa',
+    },
+    {
+      id: 'gamejam-b',
       title: { en: 'SuperSpeed SPA', fr: 'SuperSpeed SPA' },
       description: {
         en: 'tbd',
@@ -295,7 +308,7 @@ export const resumeConfig: ResumeConfig = {
       github: 'https://github.com/enzo-berti/superspeed-spa',
     },
     {
-      id: 'gamejam-b',
+      id: 'gamejam-c',
       title: { en: 'Demons&Deadlines', fr: 'Demons&Deadlines' },
       description: {
         en: 'This game was made in 48 hours. The challenge of this jam was that I\'m the only developer of the group. Moreover the type of the game «type game» was completly stranger to me',
