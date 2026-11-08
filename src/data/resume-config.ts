@@ -7,20 +7,20 @@ export const resumeConfig: ResumeConfig = {
     photo: '/images/photo.jpg',
     photoBackEmoji: '🦆',
     title: {
-      en: 'Software Developer',
-      fr: 'Développeur Logiciel',
+      en: 'Gameplay Developer',
+      fr: 'Développeur Gamepaly',
     },
     subtitle: {
       en: 'Developeur in the search of a new experience',
-      fr: 'Développeur à la recherche de nouvelles expériences',
+      fr: 'Freelance à la recherche de nouvelles expériences',
     },
     location: 'Strasbourg, France',
   },
 
   // ===== SEO (used in <head> meta tags) =====
   seo: {
-    title: 'Enzo Berti - Software Developer',
-    description: 'Interactive resume of Enzo Berti, Software Developer specializing in C++, C#, .NET, Unity and Unreal Engine.',
+    title: 'Enzo Berti - Gameplay Developer',
+    description: 'Interactive resume of Enzo Berti, Gameplay Developer specializing in C++, C#, .NET, Unity and Unreal Engine.',
   },
 
   // ===== LANGUAGES =====
@@ -38,7 +38,7 @@ export const resumeConfig: ResumeConfig = {
     { type: 'github', label: '/enzo-berti', href: 'https://github.com/enzo-berti' },
     { type: 'itch', label: 'enzoberti.itch.io', href: 'https://enzoberti.itch.io/' },
     { type: 'linkedin', label: 'in/Enzo-Berti', href: 'https://linkedin.com/in/enzo-berti/' },
-    { type: 'email', label: 'enzoberti@protonmail.com' },
+    { type: 'email', label: 'contact@enzoberti.fr' },
     { type: 'location', label: 'Strasbourg, France' },
   ],
 
@@ -48,10 +48,10 @@ export const resumeConfig: ResumeConfig = {
       title: { en: 'Languages', fr: 'Langues' },
       type: 'languages',
       items: [
-        { name: { en: 'French', fr: 'Français' }, level: { en: 'Native', fr: 'Natif' } },
-        { name: { en: 'English', fr: 'Anglais' }, level: { en: 'Professional', fr: 'Professionnel' }, details: { en: 'TOEIC exam in progress', fr: 'Passage du TOEIC en cours' } },
-        { name: { en: 'Spanish', fr: 'Espagnol' }, level: { en: 'School', fr: 'Scolaire' }},
-        { name: { en: 'German', fr: 'Allemand' }, level: { en: 'School', fr: 'Scolaire' }},
+        { name: { en: 'French', fr: 'Français' }, details: { en: '', fr: 'Natif' } },
+        { name: { en: 'English', fr: 'Anglais' }, details: { en: '', fr: 'Professionnel' } },
+        { name: { en: 'Spanish', fr: 'Espagnol' }, details: { en: 'School', fr: 'Scolaire' }},
+        { name: { en: 'German', fr: 'Allemand' }, details: { en: 'School', fr: 'Scolaire' }},
       ],
     },
     {
@@ -63,7 +63,7 @@ export const resumeConfig: ResumeConfig = {
         { name: 'C' },
         { name: 'Lua' },
         { name: 'Python' },
-        { name: 'SQL'},
+        { name: 'SQL' },
       ],
     },
     {
@@ -71,8 +71,8 @@ export const resumeConfig: ResumeConfig = {
       type: 'badges',
       items: [
         { name: 'Unity' },
-        { name: 'Godot' },
         { name: 'Unreal Engine 5' },
+        { name: 'Godot' },
       ],
     },
     {
@@ -125,57 +125,54 @@ export const resumeConfig: ResumeConfig = {
   // ===== PROFESSIONAL EXPERIENCES =====
   experiences: [
     {
-      id: 'freelance-school',
-      company: { en: 'Freelance Developer', fr: 'Développeur Freelance' },
-      role: { en: 'Software Developer', fr: 'Développeur Unity & Unreal' },
+      id: 'tatou-software-a',
+      company: { en: 'Piki&Co', fr: 'Piki&Co' },
+      role: { en: 'Unity Developer', fr: 'Développeur Unity' },
       type: { en: 'Freelance', fr: 'Freelance' },
-      period: { en: '2024 - Now', fr: '2024 - Présent' },
+      period: { en: 'sept. 2026 - oct. 2026', fr: 'sept. 2026 - oct. 2026' },
       description: {
         en: 'Gameplay development in freelance with multiple individuals',
-        fr: 'Développement gameplay en freelance pour plusieurs particuliers',
+        fr: 'Développement et intégration d\'un prototype de jeu mobile sur Unity',
       },
-      techs: ['C++', 'C#', '.NET', 'Unity', 'Godot', 'Unreal Engine 5'],
-      isHighlighted: false,
+      techs: ['Unity', 'C#', '.NET'],
+      isHighlighted: true,
       details: {
         context: {
-          en: 'During my studies I started developing in freelance to gain experience. Thanks to this I learn how to work with clients',
-          fr: 'Au cours de mes études je me suis lancé dans le développement freelance pour gagner de l\'expérience. Grâce à cela j\'ai pu apprendre plus concrètement comment travailler avec des clients. Désormais je continue la freelance pour aider ceux dans le besoin d\'un développeur expérience dans le jeu vidéo',
+          en: '',
+          fr: 'Pendant 2 mois, j\'ai développé de A à Z un prototype de jeu pour Piki&Co. Ce prototype est une application mobile pour enfants leur apprenant l\'anglais.',
         },
         tasks: {
           en: [
-            'Rewrite architecture',
-            'Tools development',
-            'Gameplay development',
           ],
           fr: [
-            'Réécriture d\'architecture de code',
-            'Développement d\'outils',
-            'Développement gameplay',
-            'Game Design',
+            'Développement du gameplay',
+            'Création des UI',
+            'Développement d\'outils pour la game designer',
+            'Intégration des sons, musiques et graphismes du jeu',
           ],
         },
         env: {
-          en: 'Visual Studio, Visual Studio Code, Git, TortoiseSVN, Trello',
-          fr: 'Visual Studio, Visual Studio Code, Git, TortoiseSVN, Trello',
+          en: '',
+          fr: 'Visual Studio, Git',
         },
       },
     },
     {
-      id: 'freelance-a',
+      id: 'indy-a',
       company: { en: 'Non annonced project', fr: 'Projet non annoncé' },
-      role: { en: 'Lead Unreal Engine Programmer', fr: 'Lead Développeur Unreal Engine' },
-      type: { en: 'Freelance', fr: 'Freelance' },
-      period: { en: '2026 - Now', fr: '2026 - Présent' },
+      role: { en: 'Unreal Engine Programmer', fr: 'Développeur Unreal Engine' },
+      type: { en: 'Indy', fr: 'Indépendant' },
+      period: { en: 'mars 2026 - avril 2026', fr: 'mars 2026 - avril 2026' },
       description: {
         en: 'Help a team of 7 students.',
-        fr: 'Aide une équipe de 7 personnes étudiants',
+        fr: 'Aide un groupe de 7 personnes étudiants',
       },
       techs: ['Unreal Engine 5', 'C++', 'Blueprint'],
-      isHighlighted: true,
+      isHighlighted: false,
       details: {
         context: {
           en: 'I\'m actually helping a group of student at CNAM Enjmin for developing a professional game. I check, fix the scripts and give a new point of view on how to develop a long term project',
-          fr: 'J\'aide plusieurs étudiants du CNAM Enjmin à développer un jeu professionnel. Je vérifie, corrige les scripts et donne un nouveau point de vue sur comment développer un projet à long terme',
+          fr: 'J\'ai aidé plusieurs étudiants du CNAM Enjmin à développer un prototype de jeu. J\'ai vérifié et corrigé les scripts, mais aussi développé un Kinematic Character Controller pour le projet',
         },
         tasks: {
           en: [
@@ -202,7 +199,7 @@ export const resumeConfig: ResumeConfig = {
       company: { en: 'Paradox Polygon', fr: 'Paradox Polygon' },
       role: { en: 'Unity Developer Intern', fr: 'Stagiaire Développeur Unity C# .NET' },
       type: { en: 'Internship', fr: 'Stage' },
-      period: { en: '01/2025 - 06/2025', fr: '01/2025 - 06/2025' },
+      period: { en: 'janv. 2025 -  juin 2025', fr: 'janv. 2025 -  juin 2025' },
       description: {
         en: 'Contributing in the development of a video game. Acquisition of experience in tool\'s development in Windows and Unity',
         fr: 'Contribution au développement d\'un jeu vidéo. Acquisition d\'expérience en développement d\'outils sur Windows et Unity',
@@ -228,6 +225,42 @@ export const resumeConfig: ResumeConfig = {
         env: {
           en: 'tbd',
           fr: 'Visual Studio, Turtoise SVN',
+        },
+      },
+    },
+    {
+      id: 'freelance-school',
+      company: { en: 'Freelance Developer', fr: 'Développeur Freelance Fiverr' },
+      role: { en: 'Software Developer', fr: 'Développeur Unity & Unreal' },
+      type: { en: 'Freelance', fr: 'Freelance' },
+      period: { en: '2024 - 2025', fr: '2024 - 2025' },
+      description: {
+        en: 'Gameplay development in freelance with multiple individuals',
+        fr: 'Développement gameplay en freelance pour plusieurs particuliers pendant mes études',
+      },
+      techs: ['C++', 'C#', '.NET', 'Unity', 'Unreal Engine 5'],
+      isHighlighted: false,
+      details: {
+        context: {
+          en: 'During my studies I started developing in freelance to gain experience. Thanks to this I learn how to work with clients',
+          fr: 'Au cours de mes études je me suis lancé dans le développement freelance pour gagner de l\'expérience. Grâce à cela j\'ai pu apprendre plus concrètement comment travailler avec des clients. Désormais je continue la freelance pour aider ceux dans le besoin',
+        },
+        tasks: {
+          en: [
+            'Rewrite architecture',
+            'Tools development',
+            'Gameplay development',
+          ],
+          fr: [
+            'Réécriture d\'architecture de code',
+            'Développement d\'outils',
+            'Développement gameplay',
+            'Game Design',
+          ],
+        },
+        env: {
+          en: 'Visual Studio, Rider, Git, Trello',
+          fr: 'Visual Studio, Rider, Git, Trello',
         },
       },
     },
@@ -293,7 +326,7 @@ export const resumeConfig: ResumeConfig = {
       images: ['/gamejams/unepuresoiree_a.png', '/gamejams/unepuresoiree_b.png'],
       techs: ['Godot', 'GDScript'],
       itchio: 'https://peterlebagarreur.itch.io/une-pure-soiree',
-      github: 'https://github.com/enzo-berti/superspeed-spa',
+      github: 'https://github.com/enzo-berti/no-crunch-game-jam-6',
     },
     {
       id: 'gamejam-b',
@@ -317,7 +350,7 @@ export const resumeConfig: ResumeConfig = {
       images: ['/gamejams/demonsdeadlines_a.png', '/gamejams/demonsdeadlines_b.png', '/gamejams/demonsdeadlines_c.png'],
       techs: ['Unity', 'C#'],
       itchio: 'https://github.com/enzo-berti/demons-deadlines',
-      github: 'https://github.com/SmoothBrainStudio/tied-to-the-past',
+      github: 'https://github.com/enzo-berti/demons-deadlines',
     },
   ],
 
@@ -363,7 +396,7 @@ export const resumeConfig: ResumeConfig = {
     {
       title: { en: 'Video editing', fr: 'Montage vidéo' },
       details: [
-        { en: 'Game trailers, podcast', fr: 'Podcast, trailer de jeux vidéo' },
+        { en: 'Livestream, game trailers, podcast', fr: 'Livestream, podcast, trailer de jeux vidéo' },
       ],
     },
   ],
