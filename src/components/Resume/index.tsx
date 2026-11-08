@@ -14,7 +14,7 @@ export function Resume() {
     <div className="w-full max-w-4xl mx-auto px-4 py-8">
       {/* Top bar: theme toggle + language + pdf */}
       <div className="flex items-center justify-between mb-4">
-        <PdfDownload />
+        {/*<PdfDownload />*/}
         <div className="flex items-center gap-2">
           <LanguageToggle />
           <ThemeToggle label={resolve(resumeConfig.labels.actions.switchTheme)} />
