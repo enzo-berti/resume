@@ -125,6 +125,35 @@ export const resumeConfig: ResumeConfig = {
   // ===== PROFESSIONAL EXPERIENCES =====
   experiences: [
     {
+      id: 'tatou-software-b',
+      company: { en: 'My Torah Kids', fr: 'My Torah Kids' },
+      role: { en: 'Unity Developer', fr: 'Développeur Unity' },
+      type: { en: 'Freelance', fr: 'Freelance' },
+      period: { en: 'nov. 2026', fr: 'nov. 2026' },
+      description: {
+        en: 'Gameplay development in freelance with multiple individuals',
+        fr: 'Développement d\'un prototype d\’une application mobile recopiant duolingo',
+      },
+      techs: ['Unity', 'C#', '.NET'],
+      isHighlighted: true,
+      details: {
+        context: {
+          en: '',
+          fr: '',
+        },
+        tasks: {
+          en: [
+          ],
+          fr: [
+          ],
+        },
+        env: {
+          en: '',
+          fr: 'Visual Studio, Git',
+        },
+      },
+    },
+    {
       id: 'tatou-software-a',
       company: { en: 'Piki&Co', fr: 'Piki&Co' },
       role: { en: 'Unity Developer', fr: 'Développeur Unity' },
@@ -132,7 +161,7 @@ export const resumeConfig: ResumeConfig = {
       period: { en: 'sept. 2026 - oct. 2026', fr: 'sept. 2026 - oct. 2026' },
       description: {
         en: 'Gameplay development in freelance with multiple individuals',
-        fr: 'Développement et intégration d\'un prototype de jeu mobile sur Unity',
+        fr: 'Développement et intégration d\'une application mobile pour enseigner l’anglais aux enfants',
       },
       techs: ['Unity', 'C#', '.NET'],
       isHighlighted: true,
@@ -146,7 +175,7 @@ export const resumeConfig: ResumeConfig = {
           ],
           fr: [
             'Développement du gameplay',
-            'Création des UI',
+            'Création des interfaces',
             'Développement d\'outils pour la game designer',
             'Intégration des sons, musiques et graphismes du jeu',
           ],
@@ -167,7 +196,7 @@ export const resumeConfig: ResumeConfig = {
         en: 'Help a team of 7 students.',
         fr: 'Aide un groupe de 7 personnes étudiants',
       },
-      techs: ['Unreal Engine 5', 'C++', 'Blueprint'],
+      techs: ['C++', 'Unreal Engine 5', 'Blueprint'],
       isHighlighted: false,
       details: {
         context: {
@@ -195,10 +224,10 @@ export const resumeConfig: ResumeConfig = {
       },
     },
     {
-      id: 'internship',
+      id: 'cdd',
       company: { en: 'Paradox Polygon', fr: 'Paradox Polygon' },
-      role: { en: 'Unity Developer Intern', fr: 'Stagiaire Développeur Unity C# .NET' },
-      type: { en: 'Internship', fr: 'Stage' },
+      role: { en: 'Unity Developer', fr: 'Développeur Unity C# .NET' },
+      type: { en: 'CDD', fr: 'CDD' },
       period: { en: 'janv. 2025 -  juin 2025', fr: 'janv. 2025 -  juin 2025' },
       description: {
         en: 'Contributing in the development of a video game. Acquisition of experience in tool\'s development in Windows and Unity',
@@ -207,8 +236,8 @@ export const resumeConfig: ResumeConfig = {
       techs: ['C#', '.NET', 'Unity', 'WPF'],
       details: {
         context: {
-          en: 'Professional internship of 6 month for my final year of bachelor\'s',
-          fr: 'Stage professionnel de 6 mois pour confirmer ma dernière année de licence',
+          en: '',
+          fr: '',
         },
         tasks: {
           en: [
@@ -217,9 +246,10 @@ export const resumeConfig: ResumeConfig = {
             'Optimisation',
           ],
           fr: [
+            'Tools',
             'Développement de destruction de meshs procéduraux',
             'Character controller',
-            'Optimisation',
+            'Optimisation du jeux',
           ],
         },
         env: {
@@ -230,7 +260,7 @@ export const resumeConfig: ResumeConfig = {
     },
     {
       id: 'freelance-school',
-      company: { en: 'Freelance Developer', fr: 'Développeur Freelance Fiverr' },
+      company: { en: 'Developer', fr: 'Développeur Fiverr' },
       role: { en: 'Software Developer', fr: 'Développeur Unity & Unreal' },
       type: { en: 'Freelance', fr: 'Freelance' },
       period: { en: '2024 - 2025', fr: '2024 - 2025' },
