@@ -35,11 +35,11 @@ export const resumeConfig: ResumeConfig = {
 
   // ===== CONTACT =====
   contact: [
+    { type: 'email', label: 'contact@enzoberti.fr' },
+    { type: 'location', label: 'Strasbourg, France' },
     { type: 'github', label: '/enzo-berti', href: 'https://github.com/enzo-berti' },
     { type: 'itch', label: 'enzoberti.itch.io', href: 'https://enzoberti.itch.io/' },
     { type: 'linkedin', label: 'in/Enzo-Berti', href: 'https://linkedin.com/in/enzo-berti/' },
-    { type: 'email', label: 'contact@enzoberti.fr' },
-    { type: 'location', label: 'Strasbourg, France' },
   ],
 
   // ===== SKILLS =====
@@ -132,7 +132,7 @@ export const resumeConfig: ResumeConfig = {
       period: { en: 'nov. 2026', fr: 'nov. 2026' },
       description: {
         en: 'Gameplay development in freelance with multiple individuals',
-        fr: 'Développement d\'un prototype d\’une application mobile recopiant duolingo',
+        fr: 'Développement d\'un prototype d\'une application mobile recopiant duolingo',
       },
       techs: ['Unity', 'C#', '.NET'],
       isHighlighted: true,
